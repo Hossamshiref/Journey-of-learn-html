@@ -6,47 +6,51 @@
         <title>MY page</title>
     </head>
 <!--
-Form Part 4 - Hidden, Reset, Color, Range, Number
-
+assignment_1
 _______________________________________________________________________________
 -->
     <body>
-        <div>
-        
-            <p>welcom to my <span>journy</span> of learn html</p>
-                <hr/>
-            <p>I am very happy</p>
-            <hr/>
-        </div>
-        <div>
-            <form action="" method="get">
-            <div> 
-                <input type="text" required placeholder="username" name="username">
-            </div>
-            <div>
-                <input type="password" required placeholder="password" name="pass">
-            </div>
-            <div>
-                <input type="text" placeholder="subject" name="sub">
-            </div>
-            <div>
-                <input type="email" required placeholder="email" value="hossamshiref01@gmail.com" name="mail">
-            </div>
-            <div>
-                <input type="hidden"  value="hovgygyyy" name="hide">
-            </div>
-            <div>
-                <input type="color" required placeholder="color" value="green" name="color">
-            </div>
-            <div>
-                <input type="range" name="range" min="1" max="10" step="1">
-            </div>
-            <div>
-                <input type="number" name="number" placeholder="number" min="10" max="100" step="10">
-            </div>
-                <input type="reset" value="reset" >
-                <input type="submit" value="save">
-            </form>
-        </div>
-    </body>  
-</html>
+        <table width="40" border="1">
+            <thead>
+                <tr>
+                    <td>Group</td><td>Avatar</td><td>Name</td><td>Email</td><td>Character</td><td>Profile</td>
+                </tr>
+            </thead>
+            <caption>
+                Members data
+            </caption>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Ninja</td>
+                    
+                        <td>
+                        <img src="https://placehold.co/600x400/000000/FFF" width="100">
+                        </td>
+                        <td> Osama<br/> Mohamed </td>
+                        <td>Osama@gmail.com <hr/> Mohamed@gmail.com</td>
+                    <td>&copy;</td>
+                    <td><a href="google.com" target="_blank">Profile</a></td>
+                    
+                </tr>
+                <tr>
+                       <td> <img src="https://placehold.co/600x400/000000/FFF" width="100"></td>
+                         <td>Shady<br/> Nabil </td>
+                        <td>Shady@gmail.com</td>
+                        <td>&trade;</td>
+                        <td><a href="google.com" target="_blank">Profile</a></td>
+                </tr>
+                <tr>
+                    <td>Monsters</td>
+                    <td> <img src="https://placehold.co/600x400/000000/FFF" width="100"></td>
+                    <td>Mohamed<br/>Ibrahim</td>
+                    <td>Mohamed@gmail.com</td>
+                    <td>&reg;</td>
+                    <td><a href="google.com"  target="_blank">Profile</a></td>
+                </tr>
+                <tr>
+                  <td colspan="5">Total</td>  
+                  <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>

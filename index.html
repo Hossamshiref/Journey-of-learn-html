@@ -10,8 +10,29 @@
     _____________________________________________
     -->
     <body>
-        <form>
-            <input type="range" value="400" min="100" step="50" max="500">
+        <form method="get">
+            <div>
+            <input type="text" name="username" placeholder="username" value="Hossam" readonly />
+            </div>
+            <br/>
+            <div>
+            <input type="password" name="password" placeholder="password" minlength="8" maxlength="16" />
+            </div>
+            <br/>
+            <div>
+            <input type="email" name="mail" placeholder="email" value="hossamshiref01@gmail.com" disabled />
+            </div>
+            <br/>
+            <div>
+            <input type="text" name="subject" placeholder="subject" autofocus />
+            </div>
+            <br/>
+            <div>
+            <input type="number" name="number" placeholder="number" min="10" max="100" step="10"/>   
+            </div>
+            <hr/>
+            <input type="submit" value="Save"/>
+            <input type="reset"/>
         </form>
     </body>
 </html>

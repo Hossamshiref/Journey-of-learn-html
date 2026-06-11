@@ -6,29 +6,60 @@
         <title>My page</title>
     </head>
     <!--
-    Assignment_2
-    _____________________________________________
+        Form_Part-6_Radio And Checkbox  
+__________________________________________________________________________
     -->
     <body>
         <form method="get">
             <div>
-            <input type="text" name="username" placeholder="username" value="Hossam" readonly />
+                <label>username</label>
+            <input type="text" name="username" value="Hossam" readonly />
             </div>
             <br/>
             <div>
-            <input type="password" name="password" placeholder="password" minlength="8" maxlength="16" />
+                <label>password</label>
+            <input type="password" name="password" minlength="8" maxlength="16" />
             </div>
             <br/>
             <div>
-            <input type="email" name="mail" placeholder="email" value="hossamshiref01@gmail.com" disabled />
+                <label>email</label>
+            <input type="email" name="mail" value="hossamshiref01@gmail.com" disabled />
             </div>
             <br/>
             <div>
-            <input type="text" name="subject" placeholder="subject" autofocus />
+                <label>subject</label>
+            <input type="text" name="subject" autofocus />
             </div>
             <br/>
             <div>
-            <input type="number" name="number" placeholder="number" min="10" max="100" step="10"/>   
+                <label for="num">number</label>
+            <input id="num" type="number" name="number" min="10" max="100" step="10"/>   
+            </div>
+            <hr/>
+            <div>
+                <input id="lin" type="radio" name="os" value="linux" />
+                <label for="lin">Linux</label>
+            </div>
+            <div>
+                <input id ="Mac" type="radio" name="os" value="Mac" />
+                <label for="Mac">Mac</label>
+            </div>
+                <div>
+                <input id="win" type="radio" name="os" value="Windows" />
+                <label for="win">Windows</label>
+            </div>
+            <hr/>
+            <div>
+                <input id="linux" type="checkbox" name="os" value="linux" />
+                <label for="linux">Linux</label>
+            </div>
+            <div>
+                <input id ="Mac1" type="checkbox" name="os" value="Mac" />
+                <label for="Mac1">Mac</label>
+            </div>
+                <div>
+                <input id="windows" type="checkbox" name="os" value="Windows" />
+                <label for="windows">Windows</label>
             </div>
             <hr/>
             <input type="submit" value="Save"/>

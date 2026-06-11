@@ -6,11 +6,12 @@
         <title>My page</title>
     </head>
     <!--
-        Form_Part-6_Radio And Checkbox  
+        Form_Part-7_Select And Textarea  
 __________________________________________________________________________
     -->
     <body>
         <form method="get">
+            <!--
             <div>
                 <label>username</label>
             <input type="text" name="username" value="Hossam" readonly />
@@ -60,7 +61,22 @@ __________________________________________________________________________
                 <div>
                 <input id="windows" type="checkbox" name="os" value="Windows" />
                 <label for="windows">Windows</label>
-            </div>
+            </div>-->
+            <label for="subject">your favorite subject</label>
+            <select id="subject" name="subject" multiple>
+            <optgroup label="thinking">
+                <option value="science" selected>science</option>
+                <option value="math">math</option>
+            </optgroup>
+            <optgroup label="reading">
+                <option value="english">english</option>
+                <option value="arabic">arabic</option>
+            </optgroup>
+            </select>
+            <hr/>
+            <textarea placeholder="your notes" cols="40" rows="10" name="notes">
+                
+            </textarea>
             <hr/>
             <input type="submit" value="Save"/>
             <input type="reset"/>

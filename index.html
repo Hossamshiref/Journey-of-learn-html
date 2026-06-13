@@ -6,13 +6,19 @@
         <title>My page</title>
     </head>
     <!--
-        ARIA
+        Assignment_1
         __________________________________________________________________________
     -->
     <body>
-        <div role="checkbox" tabindex="0" aria-checked="true" aria-labelledby="one">one</div>
-        <label for="one">one label</label>
-        <div role="ckeckbox" tabindex="0">two</div>
-        <div role="checkbox" tabindex="0">three</div>
+        <form method="get">
+            <label for="hide" hidden>Token</label>
+            <input id="hide" type="" hidden value="b92f1fc2fce391ad7af633723afd3055" name="token">
+            <label for="mail" name="email">Email</label>
+            <input id="mail" type="email" value="o@o.com" readonly>
+            <label for="username">username</label>
+            <input id="username" autofocus required minlength="5" maxlength="20" name="username">
+            <input type="submit" value="Send">
+            <input type="reset" value="Empty">
+        </form>
     </body>
 </html>

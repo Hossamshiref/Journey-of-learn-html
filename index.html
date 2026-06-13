@@ -6,15 +6,13 @@
         <title>My page</title>
     </head>
     <!--
-         Accessibility Intro
+        ARIA
         __________________________________________________________________________
     -->
     <body>
-        <form action="">
-            <label for="user">username</label>
-            <input id="user" type="text"/>
-            <button>Send</button> 
-            <button>Reset</button> 
-        </form>
+        <div role="checkbox" tabindex="0" aria-checked="true" aria-labelledby="one">one</div>
+        <label for="one">one label</label>
+        <div role="ckeckbox" tabindex="0">two</div>
+        <div role="checkbox" tabindex="0">three</div>
     </body>
 </html>

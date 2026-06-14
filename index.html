@@ -6,40 +6,20 @@
         <title>My page</title>
     </head>
     <!--
-        Assignment_2
+        Assignment_3
         __________________________________________________________________________
     -->
     <body>
-        <form method="get">
-            <div><label for="hide" hidden>Token</label>
-            <input id="hide" type="" hidden value="b92f1fc2fce391ad7af633723afd3055" name="token"></div><br/>
-            <div><label for="mail" name="email">Email</label>
-            <input id="mail" type="email" value="o@o.com" readonly></div><br/>
-            <div><label for="username">username</label>
-            <input id="username" autofocus required minlength="5" maxlength="20" name="username"></div><br/>
-            <div><input id="check1" type="checkbox" name="skills" value="Problem Solving" checked>
-            <label for="check1">Problem Solving</label></div>
-            <div><input id="check2" type="checkbox" name="skills" value="Logical Thinking" checked>
-            <label for="check2">Logical Thinking</label></div>
-            <div><input id="check3" type="checkbox" name="skills" value="Advanced Search">
-            <label for="check3">Advanced Search</label></div>
-            <div><input id="check4" type="checkbox" name="skills" value="Analysis">
-            <label for="check4">Analysis</label></div>
-            <div><input id="check5" type="checkbox" name="skills" value="Planning">
-            <label for="check5">Planning</label></div>
-            <hr>
-            <div><input id="jop1" type="radio" name="job" value="Front-End Developer">
-            <label for="jop1">Front-End Developer</label></div>
-            <div><input id="jop2" type="radio" name="job" value="Back-End Developer" checked>
-            <label for="jop2">Back-End Developer</label></div>
-            <div><input id="jop3" type="radio" name="job" value="Business Analyst">
-            <label for="jop3">Business Analyst</label></div>
-            <div><input id="jop4" type="radio" name="job" value="Project Manager">
-            <label for="jop4">Project Manager</label></div>
-            <div><input id="jop5" type="radio" name="job" value="Scrum Master">
-            <label for="jop5">Scrum Master</label></div>
-            <input type="submit" value="Send">
+        <form method="get" target="_blank">
+            <div><label for="search">Search</label></div><br>
+            <div><input id="search" type="text" placeholder="Enter A Search Word" name="Search" autofocus></div><br/>
+            <div><label for="file">Upload</label></div><br>
+            <div><input id="file" type="file" name="file"></div><br/>
+            <div><label for="url">URL</label></div><br>
+            <div><input id="url" type="url" name="URL" required ></div><br/>
             <input type="reset" value="Empty">
+            <input type="submit" value="Save" formnovalidate>
+            
         </form>
     </body>
 </html>
